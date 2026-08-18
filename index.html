@@ -1,203 +1,217 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TAXITIN LLC ITIN申请合作机构信息" />
-  <title>TAXITIN LLC | ITIN申请合作机构</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
-                   "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
-      color: #17202a;
-      background: #f5f7fa;
-      line-height: 1.7;
-    }
+    <title>TAXITIN LLC - 中国区域 ITIN 办理机构</title>
 
-    .topbar {
-      background: #0b4f7c;
-      color: #fff;
-      padding: 18px 24px;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    .topbar-inner {
-      max-width: 980px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, "Microsoft YaHei", sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
 
-    .brand {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
+        header {
+            background: #0b5d91;
+            color: white;
+            padding: 28px 20px;
+            text-align: center;
+        }
 
-    .brand-sub {
-      font-size: 13px;
-      opacity: 0.85;
-      margin-top: 2px;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
 
-    main {
-      max-width: 980px;
-      margin: 54px auto;
-      padding: 0 24px;
-    }
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
 
-    .hero {
-      background: #fff;
-      border-radius: 14px;
-      padding: 42px;
-      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
-    }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
 
-    h1 {
-      margin: 0 0 12px;
-      font-size: 32px;
-      line-height: 1.25;
-    }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
 
-    .intro {
-      margin: 0 0 32px;
-      color: #4b5563;
-      font-size: 17px;
-    }
+        h2 {
+            margin-top: 0;
+            font-size: 25px;
+            color: #16365c;
+        }
 
-    .partner-list {
-      display: grid;
-      gap: 16px;
-    }
+        .intro {
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
 
-    .partner {
-      border: 1px solid #dfe5eb;
-      border-radius: 10px;
-      padding: 20px 22px;
-      background: #fff;
-    }
+        .channel {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+        }
 
-    .partner h2 {
-      font-size: 18px;
-      margin: 0 0 8px;
-    }
+        .channel:last-child {
+            border-bottom: none;
+        }
 
-    .partner p {
-      margin: 0;
-      color: #5b6573;
-    }
+        .channel-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-    .partner a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #0866b3;
-      font-weight: 600;
-      text-decoration: none;
-      word-break: break-all;
-    }
+        .channel a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: #1769aa;
+            padding: 10px 18px;
+            border-radius: 5px;
+            transition: 0.2s;
+        }
 
-    .partner a:hover {
-      text-decoration: underline;
-    }
+        .channel a:hover {
+            background: #0d4f82;
+        }
 
-    .notice {
-      margin-top: 30px;
-      padding-top: 22px;
-      border-top: 1px solid #e4e8ed;
-      color: #667085;
-      font-size: 13px;
-    }
+        .notice {
+            margin-top: 35px;
+            padding: 20px;
+            background: #f2f6fa;
+            border-left: 4px solid #1769aa;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #555;
+        }
 
-    footer {
-      max-width: 980px;
-      margin: 0 auto 40px;
-      padding: 0 24px;
-      color: #7b8491;
-      font-size: 13px;
-      text-align: center;
-    }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 25px;
+            font-size: 13px;
+            color: #777;
+        }
 
-    @media (max-width: 640px) {
-      .topbar {
-        padding: 15px 18px;
-      }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
 
-      .brand {
-        font-size: 21px;
-      }
-
-      main {
-        margin: 28px auto;
-        padding: 0 16px;
-      }
-
-      .hero {
-        padding: 26px 20px;
-      }
-
-      h1 {
-        font-size: 26px;
-      }
-    }
-  </style>
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div>
-        <div class="brand">TAXITIN LLC</div>
-        <div class="brand-sub">ITIN Application Services</div>
-      </div>
+
+<header>
+    <h1>TAXITIN LLC</h1>
+    <p>ITIN Application Services</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>TAXITIN LLC 中国区域 ITIN 办理机构</h2>
+
+        <div class="intro">
+            以下为 TAXITIN LLC 在中国区域的 ITIN 办理及服务渠道：
+        </div>
+
+
+        <div class="channel">
+            <div class="channel-title">
+                1. 洛华跨境淘宝企业店
+            </div>
+
+            <a href="https://l8mmjxrh5oewf33jx2ndibpi65zpfnj.taobao.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                访问淘宝企业店
+            </a>
+        </div>
+
+
+        <div class="channel">
+            <div class="channel-title">
+                2. 洛华跨境淘宝个人店
+            </div>
+
+            <a href="https://shop107421584.taobao.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                访问淘宝个人店
+            </a>
+        </div>
+
+
+        <div class="channel">
+            <div class="channel-title">
+                3. ONE ITIN 京东旗舰店
+            </div>
+
+            <a href="https://mall.jd.com/index-243755595.html"
+               target="_blank"
+               rel="noopener noreferrer">
+                访问京东旗舰店
+            </a>
+        </div>
+
+
+        <div class="channel">
+            <div class="channel-title">
+                4. 洛华跨境小红书店
+            </div>
+
+            <a href="https://www.xiaohongshu.com/shop/6734b0b1e52a580015a56b97"
+               target="_blank"
+               rel="noopener noreferrer">
+                访问小红书店
+            </a>
+        </div>
+
+
+        <div class="channel">
+            <div class="channel-title">
+                5. 胡雅文个人
+            </div>
+
+            <!-- 如果有个人主页、微信介绍页或其他链接，可以放在这里 -->
+        </div>
+
+
+        <div class="notice">
+            <strong>说明：</strong><br>
+            TAXITIN LLC 提供 ITIN 申请相关服务。
+            本网站并非美国国税局（IRS）官方网站，与 IRS 官方网站不存在隶属关系。
+        </div>
+
     </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>ITIN申请合作机构</h1>
-      <p class="intro">
-        TAXITIN LLC 与以下机构及个人开展 ITIN 申请相关业务合作：
-      </p>
+</div>
 
-      <div class="partner-list">
-        <div class="partner">
-          <h2>1. 洛华跨境企业店</h2>
-          <p>淘宝企业店</p>
-          <a href="https://l8mmjxrh5oewf33jx2ndibpi65zpfnj.taobao.com/"
-             target="_blank" rel="noopener noreferrer">
-            访问洛华跨境企业店
-          </a>
-        </div>
 
-        <div class="partner">
-          <h2>2. 洛华跨境个人店</h2>
-          <p>淘宝个人店</p>
-          <a href="https://shop107421584.taobao.com/"
-             target="_blank" rel="noopener noreferrer">
-            访问洛华跨境个人店
-          </a>
-        </div>
+<footer>
+    © 2026 TAXITIN LLC. All Rights Reserved.
+</footer>
 
-        <div class="partner">
-          <h2>3. 胡雅文</h2>
-          <p>ITIN申请业务合作人员</p>
-        </div>
-      </div>
-
-      <div class="notice">
-        TAXITIN LLC is an independent organization. References to ITIN or IRS
-        programs do not imply endorsement by the Internal Revenue Service.
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 TAXITIN LLC. All rights reserved.
-  </footer>
 </body>
 </html>
